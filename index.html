@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, scale-to-fit=no">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <title>Page Not Found</title>
+  <title>Megan Rinker</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   <link href="css/styles.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/eig4wap.css"/>
   <link rel="stylesheet" href="https://use.typekit.net/eig4wap.css"/>
@@ -15,18 +16,105 @@
 <body>
 <div class="container-fluid">
 
-<div class="content col-12 col-lg-10 offset-lg-1">
-<h1>Looks like nothing's here yet.</h1>
-<p> But not to worry! Something will be soon.</p>
-<a href="https://meganrinker.com/" target="_blank">Back to <strong>meganrinker.com</strong></a><br>
-<img src="images/jake.gif" class="img-fluid" alt="Jake the Dog from Cartoon Network's Adventure Time staring out of a window with a coffee mug">
+<header class="header col-12">
+  <nav class="navbar col-12">
+
+  <div class="logo col-xs-5 col-5 col-md-4">
+    <a href="index.html"><img src="images/logo.png" class="img-fluid" alt="Megan Rinker logo"></a>
+  </div>
+
+<!--MOBILE NAVIGATION!-->
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <div class="overlay-content">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="works.html">WORKS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">CONTACT</a>
+      </li>
+    </ul>
+  </div>
+
 </div>
 
+<span class="offset-4 col-3 d-md-none d-lg-none" onclick="openNav()"><img src="images/menu.png" class="img-fluid" alt="menu"></span>
+<!--END OF MOBILE NAVIGATION-->
+
+<!--TAB AND DESKTOP NAVIGATION-->
+  <ul class="nav d-none d-md-flex">
+    <li class="nav-item"><a href="works.html" target="_blank">WORKS</a></li>
+    <li class="nav-item"><a href="about.html" target="_blank">ABOUT</a></li>
+    <li class="nav-item"><a href="contact.html">CONTACT</a></li>
+  </ul>
+<!--EMD OF TAB AND DESKTOP NAVIGATION-->
+
+</nav>
+</header>
+
+<section class="col-12">
+
+  <div class="intro">
+    <h1>Megan Rinker</h1>
+    <h2>Design Portfolio</h2>
+
+    <p>Hi there. I'm Megan Rinker, designer and creative specialist.</p>
+    <img src="images/create.png" alt="" class="img-fluid col-8 offset-2">
+  </div>
+
+  <div class="work">
+    <h2>View My Work</h2>
+    <p>I have experience creating websites, logos, print production, and product mockups.</p>
+    <img src="images/design.png" alt="" class="img-fluid col-8 offset-2">
+  </div>
+
+  <div class="about">
+    <h2>Learn About Me</h2>
+    <p>I am a graduate of West Virginia University with a BFA in Graphic Design.</p>
+    <img src="images/resume.png" alt="" class="img-fluid col-8 offset-2">
+  </div>
+
+  <div class="contact col-xs-12">
+
+    <h2>Reach Out</h2>
+    <p>Send design inquiries via my contact form or browse my social media to get in touch.</p>
+    <img src="images/contact.png" alt="" class="img-fluid col-8 offset-2">
+    <a href="https://art.meganrinker.com/"><p><strong>Visit my art portfolio website</strong></p></a>
+        <ul class="socials col-12 offset-lg-3 col-lg-6">
+      <li><a href="mailto:mr0088@mix.wvu.edu?subject=feedback"><img src="images/email.png" class="img-fluid" alt="email"></a></li>
+      <li><a href="https://www.instagram.com/barbedwirebee/" target="_blank"><img src="images/instagram.png" class="img-fluid" alt="instagram"></a></li>
+      <li><a href="https://www.linkedin.com/in/megan-rinker-88061316a/" target="_blank"><img src="images/linkedin.png" class="img-fluid" alt="linkedin"></a></li>
+      <li><a href="https://www.behance.net/meganr" target="_blank"><img src="images/behance.png" class="img-fluid" alt="behance"></a></li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+<script>
+/* Open */
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+/* Close */
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+
 
 </div>
-
-
-
-
 </body>
 </html>
